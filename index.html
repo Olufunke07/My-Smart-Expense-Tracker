@@ -1,0 +1,36 @@
+<div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-10">
+  <h1 class="text-2xl font-bold mb-4 text-center">Smart Expense Tracker</h1>
+
+  <!-- Input Section -->
+  <div class="mb-4">
+    <input
+      id="expenseName"
+      type="text"
+      placeholder="Expense name"
+      class="w-full p-2 border rounded mb-2"
+    />
+    <input
+      id="expenseAmount"
+      type="number"
+      placeholder="Amount"
+      class="w-full p-2 border rounded mb-2"
+    />
+    <button
+      id="addExpenseBtn"
+      class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+    >
+      Add Expense
+    </button>
+  </div>
+
+  <!-- Expense List -->
+  <ul id="expenseList" class="mb-4 space-y-2"></ul>
+
+  <!-- Total -->
+  <p class="font-bold text-lg">Total: $<span id="totalAmount">0</span></p>
+
+  <!-- Chart -->
+  <div class="mt-6">
+    <canvas id="expenseChart"></canvas>
+  </div>
+</div>
